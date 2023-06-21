@@ -1,0 +1,22 @@
+<html>
+    <script src="https://campmany--dev.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
+    <div class="ltngOutContainer">
+
+    </div>
+    <script>
+        $Lightning.use(
+            'c:LightningOutContainer',
+            () => {
+                $Lightning.createComponent(
+                    'c:formSignUpPremium',
+                    {},
+                    document.querySelector('.ltngOutContainer'),
+                    (cmp) => {
+                        console.log('Lighning component created.');
+                    }
+                );
+            },
+            'https://campmany--dev.sandbox.my.site.com/external'
+        );
+    </script>
+</html>
